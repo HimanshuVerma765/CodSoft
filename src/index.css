@@ -1,0 +1,166 @@
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+  --bg-color:rgb(40,47,97);
+}
+
+
+
+body {
+  background-color: rgb(11, 26, 51);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Navbar Section */
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_bar .nav_items {
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav_bar .nav_items:hover {
+  border-bottom: 3px solid yellow;
+}
+
+
+/* Home Section */
+.home {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .left {
+  width: 620px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+  background-color: var(--bg-color);
+}
+
+.home .right .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .right .img img {
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+  border: 5px solid yellow;
+  animation-name: anime;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime{
+  0%{
+    border-color: blue;
+    transform: translate(0,0);
+    box-shadow: 10px 10px 100px 50px blue;
+  }
+  25%{
+    border-color: rgb(239, 244, 11);
+    box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+
+  }
+  50%{
+    border-color: rgb(12, 12, 199);
+    transform: translate(0,10px);
+    box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+  }
+  75%{
+    border-color: rgb(130,217,160);
+    box-shadow: 10px 10px 100px 50px rgb(130,217,160);
+  }
+  100%{
+    border-color: rgb(50, 55, 215);
+    transform: translate(0,0px);
+    box-shadow: 10px 10px 100px 50px rgb(50, 55, 215);
+  }
+}
+
+/* Skill Section */
+.skills{
+  width: 900px;
+
+}
+
+.skills .items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+
+
+}
+
+.skills .items .item{
+  width: calc(33.33%);
+  margin: 10px;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  margin: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+
+.skills .items .item img{
+  width: 70px;
+}
+
+/* Conttact section */
+.contact-icon{
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon .items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+}
+
+.contact-icon .items .icons{
+  font-size: 2rem;
+}
+
+.contact-icon .items:hover{
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.card{
+  width: 250px;
+  height: 200px;
+  border: 2px solid yellow;
+ border-radius: 10px;
+}
